@@ -1,0 +1,85 @@
+.encima {
+    background-color: #b9e2ff;
+    padding: 20px;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.imagem {
+    display: flex;
+    height: 70px;
+    border-radius: 20px;
+}
+.titulo {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ecf5fc;
+    background-color: #1795e9;
+    border-radius: 0px 20px;
+    width: 220px;
+    height: 50px;
+    margin-left: 10px;
+    justify-content: center;
+    display: flex;
+    padding-bottom: 60px;
+}
+.botoes {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Outfit', sans-serif;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px 2px #000000a4;
+    color: #074269;
+}
+.home {
+    background-color: #e6f4fd;
+    width: 240px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    border-radius: 20px 20px;
+}
+.sobre {
+    background-color: #e6f4fd;
+    width: 240px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    border-radius: 20px 20px;
+}
+.contato {
+    background-color: #e6f4fd;
+    width: 240px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    border-radius: 20px 20px;
+}
+.titulo :hover {
+    font-size: 41px;
+}
+.botoes :hover {
+    background-color:#dbeffd ;
+}
+@media (max-width:700px) {
+    .titulo {
+        display: none;
+    }
+    .botoes {
+        flex-direction: column;
+        align-items: center;
+    }
+    .encima {
+        justify-content: center;
+        height: auto;
+    }
+}
