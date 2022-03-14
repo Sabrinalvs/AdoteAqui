@@ -1,3 +1,7 @@
+body {
+ margin: 0;
+ padding: 0;
+}
 .encima {
     background-color: #a2cece;
     padding: 20px;
@@ -43,35 +47,19 @@
     text-shadow: 1px 1px 2px#00000062;
     color: #eff7f5;
 }
-.home {
+.naveg {
     background-color: #5c8385;
-    width: 180px;
+    width: 30%;
     height: 70px;
-    display: flex;
-    justify-content: center;
-    padding-top: 20px;
+    text-align: center;
     border-radius: 20px 20px;
     box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.2);
+    color: #f5fafa;
+    font-family: 'Outfit', sans-serif;
+    font-size: 25px;
 }
-.sobre {
-    background-color: #5c8385;
-    width: 180px;
-    height: 70px;
-    display: flex;
-    justify-content: center;
-    padding-top: 20px;
-    border-radius: 20px 20px;
-    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.2);
-}
-.contato {
-    background-color: #5c8385;
-    width: 180px;
-    height: 70px;
-    display: flex;
-    justify-content: center;
-    padding-top: 20px;
-    border-radius: 20px 20px;
-    box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.2);
+a {
+    color: #eff7f5;
 }
 .imagemetitulo :hover {
     font-size: 41px;
@@ -81,17 +69,73 @@
     flex-direction: row;
 }
 .fundodogs {
-    width: 300px;
+    width: 25%;
     height: 400px;
     background-color: #1b1b2c;
     margin: 10px;
     margin-top: 30px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 .botoes :hover {
     background-color:#376860 ;
 }
+.foto {
+    width: 80%;
+    border: 2px solid #eff7f5;
+}
+.nome {
+    color: #f5fafa;
+    font-family: 'Outfit', sans-serif;
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+li {
+    color: #f5fafa;
+    font-family: 'Outfit', sans-serif;
+    font-size: 20px;
+    padding: 5px;
+}
+.adotar {
+    font-family: 'Outfit', sans-serif;
+    font-size: 20px;
+}
+.sobreecontato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sobre2 {
+    background-color: #5c8385;
+    color: #f5fafa;
+    font-family: 'Outfit', sans-serif;
+    font-size: 30px;
+    width: 60%;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.sobre3 {
+    background-color: #5c8385;
+    color: #f5fafa;
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
 @media (max-width:700px) {
+    .naveg {
+        width: 80%;
+        margin: 10px;
+    }
     .titulo {
         display: none;
     }
@@ -105,5 +149,13 @@
     .encima {
         justify-content: center;
         height: auto;
+    }
+    .containerdogs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .fundodogs {
+        width: 80%;
     }
 }
